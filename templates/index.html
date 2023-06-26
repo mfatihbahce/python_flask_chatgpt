@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT Uygulaması</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>ChatGPT Uygulaması</h1>
+    <form action="/get_response" method="post">
+        <input type="text" name="question" placeholder="Sorunuzu girin" required>
+        <button type="submit">Gönder</button>
+    </form>
+    <div id="response"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form').submit(function(e) {
+                e.preventDefault();
+                var question = $('input[name="question"]').val();
+                $.ajax({
+                    url: '/get_response',
+                    type: 'POST',
+                    data: {question: question},
+                    success: function(response) {
+                        $('#response').text(response);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
