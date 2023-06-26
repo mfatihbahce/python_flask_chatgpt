@@ -2,6 +2,8 @@
 
 Bu Flask uygulaması, kullanıcıların sorularını yanıtlamak için OpenAI'nin ChatGPT modelini kullanan bir web arayüzü sağlar.
 
+![Uygulama Ekran Görüntüsü](image/ss.png)
+
 ## Amaç
 
 ChatGPT Uygulaması, doğal dil işleme yeteneklerini kullanarak kullanıcıların çeşitli konulardaki sorularını yanıtlamayı hedeflemektedir. OpenAI'nin ChatGPT modeli, geniş bir dil bilgisine ve anlamaya sahip güçlü bir yapay zeka modelidir. Bu uygulama, ChatGPT modelini kullanarak kullanıcılara interaktif bir deneyim sunar.
