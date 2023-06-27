@@ -18,7 +18,7 @@ ChatGPT Uygulaması, doğal dil işleme yeteneklerini kullanarak kullanıcılar�
 
 1. Bu depoyu klonlayın:
 
-git clone https://github.com/kullaniciadi/proje.git
+git clone https://github.com/mfatihbahce/python_flask_chatgpt.git
 
 2. Proje klasörüne gidin:
 
